@@ -10,6 +10,8 @@ public class Main {
         System.out.print("Enter an expression: ");
         String exp = scn.nextLine();
 
+        exp = exp.replaceAll(" ", "");
+
         //Определение действия (+,-,*,/)
         int actionIndex=-1;
         for (int i=0; i<actions.length; i++){
